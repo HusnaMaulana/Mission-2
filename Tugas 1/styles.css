@@ -1,0 +1,115 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 45px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Produk*/
+.ContainerProduct {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: 1px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px; /* Adjust as needed */
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.productImage {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+.jumlahBarang {
+  text-align: center;
+}
+
+.button {
+  margin-bottom: 8px;
+}
+
+/*Checkout section*/
+.checkout {
+  background-color: aqua;
+}
+
+.cart ul li img {
+  max-width: 100px; /* Atur lebar maksimum gambar */
+  max-height: 100px; /* Atur tinggi maksimum gambar */
+}
+
+/*Button*/
+
+.button-plus{
+  background-color: green;
+  font-size: larger;
+  color: #f5f5f5;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 35px;
+}
+
+.button-minus{
+  background-color:red;
+  font-size: larger;
+  color: #f5f5f5;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 35px;
+}
+
+.jumlahBarang{
+  height: 25px;
+  outline: 5px;
+}
+
+/*Cart*/
+.cart{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 380px;
+  width: 25% ;
+  align-items:first baseline;
+}
+
+.cart li{
+  list-style: decimal;
+  font-weight: bold;
+}
+
+.button-checkout{
+  background-color: green;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 35px;
+  font-size: large;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}

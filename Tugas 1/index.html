@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Tugas1</title>
+</head>
+<body>
+    <div class="title">
+        <header>ASOKA</header>
+    </div>
+    <div class="ContainerProduct">
+        <div class="product">
+            <h4>RTX 4090</h4>
+            <img class="productImage" src="asset/Rtx4090.png" alt="produk1" />
+            <h5>Rp 45.000.000</h5>
+            <div class="button">
+                <button class="button-minus" onclick="decrement('barang-1', 'RTX 4090', 45000000)"> - </button>
+                <input type="number" class="jumlahBarang" id="barang-1" value="0" min="0" />
+                <button class="button-plus" onclick="increment('barang-1', 'RTX 4090', 'asset/Rtx4090.png', 45000000)"> + </button>
+            </div>
+        </div>
+
+        <div class="product">
+          <h4>Intel Core i5 12th Gen</h4>
+          <img class="productImage" src="asset/Intel Core I5 12th Gen.png" alt="produk1" />
+          <h5>Rp 5.000.000</h5>
+          <div class="button">
+            <button class="button-minus" onclick="decrement('barang-2', 'Intel Core i5 12th Gen', 5000000)"> - </button>  
+            <input type="number" class="jumlahBarang" id="barang-2" value="0" min="0" />
+            <button class="button-plus" onclick="increment('barang-2', 'Intel Core i5 12th Gen', 'asset/Intel Core I5 12th Gen.png', 5000000)"> + </button>
+          </div>
+        </div>
+
+        <div class="product">
+            <h4>Corsair RM 650W Gold</h4>
+            <img class="productImage" src="asset/Corsair RM 650W Gold.png" alt="produk1" />
+            <h5>Rp 1.500.000</h5>
+            <div class="button">
+                <button class="button-minus" onclick="decrement('barang-3', 'Corsair RM 650W Gold',  5000000)"> - </button>
+                <input type="number" class="jumlahBarang" id="barang-3" value="0" min="0" />
+                <button class="button-plus" onclick="increment('barang-3', 'Corsair RM 650W Gold', 'asset/Corsair RM 650W Gold.png', 5000000)"> + </button>
+            </div>
+          </div>
+
+          <div class="product">
+            <h4>RTX 4090</h4>
+            <img class="productImage" src="asset/Rtx4090.png" alt="produk1" />
+            <h5>Rp 45.000.000</h5>
+            <div class="button">
+                <button class="button-minus" onclick="decrement('barang-4', 'RTX 4090', 45000000)"> - </button>
+                <input type="number" class="jumlahBarang" id="barang-4" value="0" min="0" />
+                <button class="button-plus" onclick="increment('barang-4', 'RTX 4090', 'asset/Rtx4090.png', 45000000)"> + </button>
+            </div>
+        </div>
+
+        <div class="product">
+          <h4>Intel Core i5 12th Gen</h4>
+          <img class="productImage" src="asset/Intel Core I5 12th Gen.png" alt="produk1" />
+          <h5>Rp 5.000.000</h5>
+          <div class="button">
+            <button class="button-minus" onclick="decrement('barang-5', 'Intel Core i5 12th Gen', 5000000)"> - </button>  
+            <input type="number" class="jumlahBarang" id="barang-5" value="0" min="0" />
+            <button class="button-plus" onclick="increment('barang-5', 'Intel Core i5 12th Gen', 'asset/Intel Core I5 12th Gen.png', 5000000)"> + </button>
+          </div>
+        </div>
+
+        <div class="product">
+            <h4>Corsair RM 650W Gold</h4>
+            <img class="productImage" src="asset/Corsair RM 650W Gold.png" alt="produk1" />
+            <h5>Rp 1.500.000</h5>
+            <div class="button">
+                <button class="button-minus" onclick="decrement('barang-6', 'Corsair RM 650W Gold',  5000000)"> - </button>
+                <input type="number" class="jumlahBarang" id="barang-6" value="0" min="0" />
+                <button class="button-plus" onclick="increment('barang-6', 'Corsair RM 650W Gold', 'asset/Corsair RM 650W Gold.png', 5000000)"> + </button>
+            </div>
+          </div>
+
+
+        <!-- Produk lainnya di sini -->
+    </div>
+    <div class="cart">
+        <h3>My Cart</h3>
+        <ul>
+            <!-- Item keranjang akan ditambahkan di sini -->
+        </ul>
+        <p>Total Harga: <span id="total-harga">Rp 0</span></p>
+        <p>Pajak (11%): <span id="pajak">Rp 0</span></p>
+        <p>Total Bayar: <span id="total-bayar">Rp 0</span></p>
+        <button class="button-checkout" onclick="checkout()">Lanjutkan ke Checkout</button>
+    </div>
+</body>
+</html>
